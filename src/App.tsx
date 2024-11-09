@@ -1,5 +1,4 @@
 import { Checkbox } from "@/ui/atoms/checkbox";
-import "./App.css";
 import {
   Dialog,
   DialogContent,
@@ -9,9 +8,12 @@ import {
   DialogTrigger,
 } from "./ui/molecules/dialog/Dialog";
 import { useState } from "react";
+import { SidebarLayout } from "./SidebarLayout";
 
 export default function App() {
   const [isChecked, setIsChecked] = useState(false);
+
+  return <SidebarLayout />;
 
   return (
     <>
